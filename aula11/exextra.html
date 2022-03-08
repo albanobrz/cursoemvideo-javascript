@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício extra</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Digite sua nacionalidade</p>
+    <input type="text" name="nac" id="nac">  <!--se der erro, coloca o tipo la em baixo, coloquei string-->
+    <input type="button" value="Salve" onclick="verificar()">
+    <div id='res'>
+
+    </div>
+
+    <script>
+    
+    function verificar() {
+        var a = window.document.getElementById('nac')
+        var res = window.document.querySelector('div#res')
+        var naci = String(a.value)
+        if (naci == 'brasileiro') {
+            res.innerHTML = 'Brasil'
+        } else {
+            res.innerHTML = 'Gringas'
+        }
+    }
+    
+    </script>
+
+
+    
+</body>
+</html>
